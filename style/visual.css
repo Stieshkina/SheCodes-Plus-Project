@@ -1,0 +1,110 @@
+.container {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 130px auto;
+  padding: 30px 25px 10px 25px;
+  background-image: url("../src/sky.jpg");
+  border: 1px solid rgb(175, 204, 225);
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  color: #245d76;
+  padding: 0;
+}
+h1 {
+  font-size: 40px;
+  color: #3487aa;
+}
+h2 {
+  font-size: 35px;
+  opacity: 70%;
+}
+#celcius,
+#fahrenheit {
+  text-decoration: none;
+  color: rgba(33, 37, 41);
+}
+#celcius:hover {
+  color: rgb(72, 81, 90);
+}
+#fahrenheit:hover {
+  color: rgb(72, 81, 90);
+}
+button {
+  border: 1.6px solid #3487aa;
+  color: #3487aa;
+  font-size: 16.3px;
+  padding: 5.5px;
+  border-radius: 10px;
+  opacity: 70%;
+}
+h3 {
+  font-size: 18px;
+  opacity: 60%;
+}
+h4 {
+  font-size: 18px;
+}
+p {
+  font-size: 15px;
+  position: relative;
+  text-align: right;
+  bottom: 135px;
+  right: 8px;
+  opacity: 60%;
+}
+.form-control {
+  display: inline;
+  max-width: 180px;
+  border-radius: 10px;
+  opacity: 70%;
+}
+
+button {
+  display: inline;
+  border-radius: 10px;
+  opacity: 70%;
+}
+.right-side {
+  text-align: center;
+}
+.main-screen {
+  border: 1px solid #3487aa10;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: -3px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.forecast {
+  line-height: 48px;
+  border: 1px solid #3487aa10;
+  border-radius: 10px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.for-today {
+  border: 1px solid #3487aa10;
+  color: #245d76;
+  border-radius: 10px;
+  font-size: 17px;
+  margin: 15px 0;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.current {
+  position: relative;
+  top: 35px;
+}
+.emojis {
+  font-size: 30px;
+}
+.min {
+  opacity: 60%;
+}
