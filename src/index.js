@@ -56,6 +56,8 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
   document.querySelector("h1").innerHTML = response.data.name;
 }
 function showLocation(position) {
@@ -85,3 +87,5 @@ form.addEventListener("submit", saveLocation);
 
 let currentCityButton = document.querySelector(".current-city");
 currentCityButton.addEventListener("click", getCurrentLocation);
+
+showPlace("Kyiv");
