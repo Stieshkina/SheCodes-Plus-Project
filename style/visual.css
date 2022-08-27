@@ -19,11 +19,15 @@ h1 {
   color: #3487aa;
 }
 h2 {
-  font-size: 35px;
+  font-size: 30px;
   opacity: 70%;
 }
 #celcius,
 #fahrenheit {
+  position: relative;
+  top: -5px;
+  font-size: 23px;
+  opacity: 60%;
   text-decoration: none;
   color: rgba(33, 37, 41);
 }
@@ -42,7 +46,7 @@ button {
   opacity: 70%;
 }
 h3 {
-  font-size: 18px;
+  font-size: 15px;
   opacity: 60%;
 }
 h4 {
@@ -52,7 +56,8 @@ p {
   font-size: 15px;
   position: relative;
   text-align: right;
-  bottom: 135px;
+  margin-bottom: -20px;
+  top: -30px;
   right: 8px;
   opacity: 60%;
 }
@@ -75,7 +80,7 @@ button {
   border: 1px solid #3487aa10;
   border-radius: 10px;
   padding-top: 5px;
-  padding-bottom: -3px;
+  padding-bottom: 67px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .forecast {
@@ -110,7 +115,10 @@ button {
 }
 .footer {
   font-size: 12px;
-  position: fixed;
-  top: 530px;
+  position: relative;
+  top: -50px;
   left: 370px;
+}
+#description:first-letter {
+  text-transform: capitalize;
 }

@@ -53,12 +53,15 @@ function getCurrentLocation(event) {
 }
 
 function showTemperature(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   document.querySelector("h1").innerHTML = response.data.name;
+  let windSpeed = Math.round(response.data.wind.speed * 10) / 10;
+  document.querySelector("#wind").innerHTML = windSpeed;
 }
 function showLocation(position) {
   let longitude = position.coords.longitude;
