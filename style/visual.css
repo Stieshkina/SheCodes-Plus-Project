@@ -22,16 +22,15 @@ h2 {
   font-size: 30px;
   opacity: 70%;
 }
-#celcius,
-#fahrenheit {
+.units {
   position: relative;
-  top: -5px;
-  font-size: 23px;
+  top: -8px;
+  font-size: 20px;
   opacity: 60%;
   text-decoration: none;
-  color: rgba(33, 37, 41);
 }
-#celcius:hover {
+
+#celsius:hover {
   color: rgb(72, 81, 90);
 }
 #fahrenheit:hover {
@@ -121,4 +120,10 @@ button {
 }
 #description:first-letter {
   text-transform: capitalize;
+}
+
+.units .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }

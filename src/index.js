@@ -53,7 +53,6 @@ function getCurrentLocation(event) {
 }
 
 function showTemperature(response) {
-  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
@@ -62,7 +61,9 @@ function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   let windSpeed = Math.round(response.data.wind.speed * 10) / 10;
   document.querySelector("#wind").innerHTML = windSpeed;
+  celsiusTemperature = response.data.main.temp;
 }
+
 function showLocation(position) {
   let longitude = position.coords.longitude;
   let latitude = position.coords.latitude;
@@ -90,5 +91,28 @@ form.addEventListener("submit", saveLocation);
 
 let currentCityButton = document.querySelector(".current-city");
 currentCityButton.addEventListener("click", getCurrentLocation);
+
+function showCelsius(event) {
+  event.preventDefault();
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
+  let degree = document.querySelector(".degree");
+  degree.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", showCelsius);
+
+function showFahrenheit(event) {
+  event.preventDefault();
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
+  let degree = document.querySelector(".degree");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  degree.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFahrenheit);
 
 showPlace("Kyiv");
