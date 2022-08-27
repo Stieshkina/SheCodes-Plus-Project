@@ -53,6 +53,7 @@ function getCurrentLocation(event) {
 }
 
 function showTemperature(response) {
+  console.log(response.data.weather[0].icon);
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
@@ -62,8 +63,9 @@ function showTemperature(response) {
   let windSpeed = Math.round(response.data.wind.speed * 10) / 10;
   document.querySelector("#wind").innerHTML = windSpeed;
   celsiusTemperature = response.data.main.temp;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
 }
-
 function showLocation(position) {
   let longitude = position.coords.longitude;
   let latitude = position.coords.latitude;
