@@ -83,13 +83,18 @@ button {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .forecast {
+  color: #245d76;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  text-align: justify;
   line-height: 48px;
   border: 1px solid #3487aa10;
   border-radius: 10px;
   margin: 0;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 1px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .for-today {
@@ -114,9 +119,8 @@ button {
 }
 .footer {
   font-size: 12px;
-  position: relative;
-  top: -120px;
-  left: 370px;
+  text-align: center;
+  opacity: 60%;
 }
 #description:first-letter {
   text-transform: capitalize;
