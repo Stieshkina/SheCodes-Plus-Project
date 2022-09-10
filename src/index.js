@@ -47,8 +47,7 @@ currentHour.innerHTML = `${hour}`;
 let currentMinutes = document.querySelector(".minuteNow");
 currentMinutes.innerHTML = `${minutes}`;
 
-function displayForecast(response) {
-  console.log(response.data.daily);
+function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = "";
@@ -70,13 +69,12 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(showLocation);
 }
 
-function getForecast(coordinates) {
-  console.log(coordinates);
-  apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&${apiKey}&units=metric`;
-  console.log(apiUrl);
-  axios.get(apiUrl).then(displayForecast);
-}
+//function getForecast(coordinates) {
+//console.log(coordinates);
+//apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
+//let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&${apiKey}&units=metric`;
+// console.log(apiUrl);
+//axios.get(apiUrl).then(displayForecast);}
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
@@ -90,7 +88,6 @@ function showTemperature(response) {
   celsiusTemperature = response.data.main.temp;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `src/${response.data.weather[0].icon}.png`);
-  getForecast(response.data.coord);
 }
 function showLocation(position) {
   let longitude = position.coords.longitude;
@@ -144,3 +141,4 @@ let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", showFahrenheit);
 
 showPlace("Kyiv");
+displayForecast();
