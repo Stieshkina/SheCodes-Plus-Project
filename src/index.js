@@ -53,7 +53,6 @@ function getCurrentLocation(event) {
 }
 
 function showTemperature(response) {
-  console.log(response.data.weather[0].icon);
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
