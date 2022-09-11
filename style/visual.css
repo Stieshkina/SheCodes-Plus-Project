@@ -15,12 +15,44 @@ ul {
   padding: 0;
 }
 h1 {
-  font-size: 40px;
+  font-size: 30px;
+  text-align: left;
   color: #3487aa;
+  padding-top: 5px;
 }
 h2 {
   font-size: 30px;
   opacity: 70%;
+}
+h3 {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 60%;
+  position: fixed;
+  bottom: 340px;
+}
+h4 {
+  font-size: 18px;
+}
+button {
+  border: 1.6px solid #3487aa;
+  display: inline;
+  color: #3487aa;
+  font-size: 16.3px;
+  padding: 5.5px;
+  border-radius: 10px;
+  opacity: 70%;
+}
+
+p {
+  font-size: 15px;
+  position: relative;
+  text-align: right;
+  margin-bottom: -20px;
+  top: -30px;
+  right: 8px;
+  opacity: 60%;
 }
 .units {
   position: relative;
@@ -36,30 +68,6 @@ h2 {
 #fahrenheit:hover {
   color: rgb(72, 81, 90);
 }
-button {
-  border: 1.6px solid #3487aa;
-  color: #3487aa;
-  font-size: 16.3px;
-  padding: 5.5px;
-  border-radius: 10px;
-  opacity: 70%;
-}
-h3 {
-  font-size: 15px;
-  opacity: 60%;
-}
-h4 {
-  font-size: 18px;
-}
-p {
-  font-size: 15px;
-  position: relative;
-  text-align: right;
-  margin-bottom: -20px;
-  top: -30px;
-  right: 8px;
-  opacity: 60%;
-}
 .form-control {
   display: inline;
   max-width: 182px;
@@ -67,11 +75,6 @@ p {
   opacity: 70%;
 }
 
-button {
-  display: inline;
-  border-radius: 10px;
-  opacity: 70%;
-}
 .right-side {
   text-align: center;
 }
@@ -79,14 +82,13 @@ button {
   border: 1px solid #3487aa10;
   border-radius: 10px;
   padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 5px;
   padding-bottom: 67px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .forecast {
   color: #245d76;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 30px;
   text-align: justify;
   line-height: 48px;
   border: 1px solid #3487aa10;
@@ -94,6 +96,7 @@ button {
   margin: 0;
   padding-top: 15px;
   padding-left: 15px;
+  padding-right: 10px;
   padding-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -103,8 +106,8 @@ button {
   border-radius: 10px;
   font-size: 17px;
   margin: 15px 0;
-  padding-top: 9px;
-  padding-bottom: 11px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .current {
@@ -130,4 +133,7 @@ button {
   color: black;
   cursor: default;
   text-decoration: none;
+}
+#cityDescription {
+  padding-right: 3px;
 }

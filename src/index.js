@@ -51,14 +51,18 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#weather-forecast");
 
   let forecastHTML = "";
-  let days = ["Sun", "Mon", "Tue", "Wed"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `<span class="forecast-day"> ${day} </span> 
-      <span class="emojis"><img src="src/02d.png" width="50px"></span> 
-      <span class="max">22°</span> 
-      <span class="min">9°</span>`;
+      `<div class="row">
+      <div class="col-5">
+      <span class="forecast-day"> ${day} </span> </div>
+      <div class="col-3"> <span class="emojis"><img src="src/02d.png" width="50px"></span></div> 
+      <div class="col-2"><span class="max">22°</span></div> 
+      <div class="col-2"><span class="min">9°</span></div>
+      </div>
+      `;
   });
 
   forecastElement.innerHTML = forecastHTML;
