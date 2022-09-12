@@ -58,7 +58,7 @@ function displayForecast(response) {
       `<div class="row">
       <div class="col-5">
       <span class="forecast-day"> ${day} </span> </div>
-      <div class="col-3"> <span class="emojis"><img src="src/02d.png" width="50px"></span></div> 
+      <div class="col-3"> <span class="emojis"><img src="src/01n.png" width="50px"></span></div> 
       <div class="col-2"><span class="max">22°</span></div> 
       <div class="col-2"><span class="min">9°</span></div>
       </div>
@@ -76,7 +76,7 @@ function getCurrentLocation(event) {
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "be0b3655b1c5472db71e4600b1746970";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }

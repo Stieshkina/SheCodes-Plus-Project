@@ -27,10 +27,9 @@ h2 {
 h3 {
   text-align: left;
   font-size: 15px;
-  line-height: 1.5;
   opacity: 60%;
-  position: fixed;
-  bottom: 340px;
+  position: absolute;
+  bottom: -2px;
 }
 h4 {
   font-size: 18px;
@@ -125,6 +124,7 @@ p {
   text-align: center;
   opacity: 60%;
 }
+
 #description:first-letter {
   text-transform: capitalize;
 }
