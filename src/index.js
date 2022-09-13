@@ -89,7 +89,6 @@ function displayForecast(response) {
       `;
     }
   });
-
   forecastElement.innerHTML = forecastHTML;
 }
 
