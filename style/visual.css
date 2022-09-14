@@ -9,26 +9,16 @@
   border-radius: 10px;
 }
 
-ul {
-  list-style: none;
-  color: #245d76;
-  padding: 0;
-}
 h1 {
-  font-size: 30px;
-  text-align: left;
+  font-size: 35px;
   color: #3487aa;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 h2 {
   font-size: 30px;
   opacity: 70%;
 }
-h3 {
-  text-align: left;
-  font-size: 15px;
-  opacity: 60%;
-}
+
 h4 {
   font-size: 18px;
 }
@@ -47,6 +37,7 @@ p {
   text-align: right;
   right: 8px;
   opacity: 60%;
+  margin-bottom: 5px;
 }
 #submit {
   border: 1.6px solid #3487aa;
@@ -94,16 +85,9 @@ button:hover {
   border: 1px solid #3487aa10;
   border-radius: 10px;
   padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.lower-part {
-  border: 1px solid #3487aa10;
-  border-radius: 10px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -121,12 +105,14 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .for-today {
+  line-height: 25px;
+  text-align: center;
+  font-size: 15px;
   border: 1px solid #3487aa10;
   color: #245d76;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   margin-top: 10px;
-  font-size: 17px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .emojis {
@@ -140,7 +126,14 @@ button:hover {
   text-align: center;
   opacity: 60%;
 }
-
+#description {
+  line-height: 25px;
+  color: #245d76;
+  font-size: 15px;
+  text-align: left;
+  position: absolute;
+  top: 370px;
+}
 #description:first-letter {
   text-transform: capitalize;
 }
@@ -151,5 +144,7 @@ button:hover {
   text-decoration: none;
 }
 #cityDescription {
-  padding-right: 3px;
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 5px;
 }

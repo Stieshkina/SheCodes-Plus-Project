@@ -106,12 +106,14 @@ function getForecast(coordinates) {
 }
 
 function showTemperature(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("h1").innerHTML = response.data.name;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   let windSpeed = Math.round(response.data.wind.speed * 10) / 10;
   document.querySelector("#wind").innerHTML = windSpeed;
   celsiusTemperature = response.data.main.temp;
