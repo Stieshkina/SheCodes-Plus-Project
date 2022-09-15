@@ -52,19 +52,20 @@
                 <span class="hourNow"> </span>:<span class="minuteNow"> </span>
               </p>
               <div class="row">
-                <div class="col-6 current-temperature">
+                <div class="col-5 current-temperature">
                   <img src=".." id="icon" class="sun" alt="sun" width="70px" />
                   <div class="weather-temperature">
                     <h2>
                       <span class="degree"></span>
                       <span class="units">
-                        <a href # id="celsius" class="active">°C</a> |
+                        <a href # id="celsius" class="active">°C</a>
+                        |
                         <a href # id="fahrenheit">F</a>
                       </span>
                     </h2>
                   </div>
                 </div>
-                <div class="col-6" id="cityDescription">
+                <div class="col-7" id="cityDescription">
                   <h1></h1>
                   <div id="description"></div>
                 </div>
@@ -72,9 +73,15 @@
             </div>
           </div>
           <div class="for-today">
-            <div>Precipitation: <span id="precipitation"> </span>%</div>
-            <div>Humidity: <span id="humidity"> </span>%</div>
-            <div>Wind: <span id="wind"> </span> km/h</div>
+            <div>
+              <img src="src/humidity.png" width="28px" /> Humidity:
+              <span id="humidity"> </span>%
+            </div>
+            <br />
+            <div>
+              <img src="src/wind.png" width="28px" /> Wind:
+              <span id="wind"> </span> km/h
+            </div>
           </div>
         </div>
       </div>

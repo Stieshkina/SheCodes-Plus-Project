@@ -11,8 +11,9 @@
 
 h1 {
   font-size: 35px;
+  text-align: center;
   color: #3487aa;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 h2 {
   font-size: 30px;
@@ -31,7 +32,9 @@ button {
   border-radius: 10px;
   opacity: 70%;
 }
-
+img {
+  opacity: 60%;
+}
 p {
   font-size: 15px;
   text-align: right;
@@ -86,7 +89,7 @@ button:hover {
   border-radius: 10px;
   padding-top: 5px;
   padding-bottom: 10px;
-  padding-left: 0px;
+  padding-left: 10px;
   padding-right: 10px;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -105,7 +108,7 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .for-today {
-  line-height: 25px;
+  line-height: 15px;
   text-align: center;
   font-size: 15px;
   border: 1px solid #3487aa10;
@@ -115,9 +118,7 @@ button:hover {
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.emojis {
-  font-size: 30px;
-}
+
 .min {
   opacity: 60%;
 }
@@ -127,17 +128,19 @@ button:hover {
   opacity: 60%;
 }
 #description {
+  text-align: center;
+  opacity: 80%;
   line-height: 25px;
   color: #245d76;
-  font-size: 15px;
-  text-align: left;
-  position: absolute;
-  top: 370px;
+  font-size: 18px;
 }
 #description:first-letter {
   text-transform: capitalize;
 }
 
+.current-temperature {
+  padding-right: 0;
+}
 .units .active {
   color: black;
   cursor: default;
