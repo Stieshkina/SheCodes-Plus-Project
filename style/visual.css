@@ -5,73 +5,84 @@
   margin: 130px auto;
   padding: 30px 25px 10px 25px;
   background-image: url("../src/sky.jpg");
-  border: 1px solid rgb(175, 204, 225);
+  border: 1px solid rgb(214, 218, 221);
   border-radius: 10px;
 }
 
 h1 {
   font-size: 35px;
   text-align: center;
-  color: #3487aa;
+  color: #245d76;
+  opacity: 90%;
   padding-top: 5px;
 }
 h2 {
   font-size: 30px;
-  opacity: 70%;
+  opacity: 100%;
 }
 
 h4 {
   font-size: 18px;
 }
 button {
-  border: 1.6px solid #3487aa;
+  border: 1px solid #3487aa10;
   display: inline;
-  color: #3487aa;
+  color: #245d76;
   font-size: 16.3px;
   padding: 5.5px;
   border-radius: 10px;
   opacity: 70%;
 }
-img {
-  opacity: 60%;
+.emojis {
+  opacity: 70%;
+}
+#icon {
+  opacity: 70%;
 }
 p {
   font-size: 15px;
+  color: #1b485b;
   text-align: right;
   right: 8px;
-  opacity: 60%;
+  opacity: 70%;
   margin-bottom: 5px;
 }
 #submit {
-  border: 1.6px solid #3487aa;
+  border: 1px solid #3487aa10;
   display: inline;
-  color: #3487aa;
+  color: #245d76;
   font-size: 16.3px;
   padding: 5.5px;
   border-radius: 10px;
   opacity: 70%;
 }
 button:hover {
-  background-color: #b1daeb;
+  color: #28657f;
+  background-color: #a3ceef;
 }
 
 #submit:hover {
-  background-color: #b1daeb;
+  color: #28657f;
+  background-color: #a3ceef;
 }
 
+.degree {
+  color: #245d76;
+  opacity: 90%;
+}
 .units {
   position: relative;
+  color: grey;
   top: -8px;
   font-size: 20px;
-  opacity: 60%;
   text-decoration: none;
 }
 
 #celsius:hover {
-  color: rgb(72, 81, 90);
+  color: #28657f;
 }
 #fahrenheit:hover {
-  color: rgb(72, 81, 90);
+  color: #28657f;
 }
 .form-control {
   display: inline;
@@ -124,8 +135,9 @@ button:hover {
 }
 .footer {
   font-size: 12px;
+  color: grey;
   text-align: center;
-  opacity: 60%;
+  opacity: 70%;
 }
 #description {
   text-align: center;
@@ -141,8 +153,13 @@ button:hover {
 .current-temperature {
   padding-right: 0;
 }
-.units .active {
-  color: black;
+a {
+  color: grey;
+  text-decoration: none;
+}
+.active {
+  color: #245d76;
+  opacity: 90%;
   cursor: default;
   text-decoration: none;
 }

@@ -49,11 +49,14 @@
                 <span class="dayNow"> </span>
                 <span class="monthNow"> </span><span class="dateNow"> </span>
                 <br />
-                <span class="hourNow"> </span>:<span class="minuteNow"> </span>
+                Last updated: <span class="hourNow"> </span>:<span
+                  class="minuteNow"
+                >
+                </span>
               </p>
               <div class="row">
                 <div class="col-5 current-temperature">
-                  <img src=".." id="icon" class="sun" alt="sun" width="70px" />
+                  <img src=".." id="icon" width="70px" />
                   <div class="weather-temperature">
                     <h2>
                       <span class="degree"></span>
@@ -74,12 +77,12 @@
           </div>
           <div class="for-today">
             <div>
-              <img src="src/humidity.png" width="28px" /> Humidity:
-              <span id="humidity"> </span>%
+              <img id="humidity-img" src="src/humidity.png" width="28px" />
+              Humidity: <span id="humidity"> </span>%
             </div>
             <br />
             <div>
-              <img src="src/wind.png" width="28px" /> Wind:
+              <img src="src/wind.png" id="wind-img" width="28px" /> Wind:
               <span id="wind"> </span> km/h
             </div>
           </div>
