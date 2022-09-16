@@ -98,15 +98,12 @@ function getCurrentLocation(event) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "be0b3655b1c5472db71e4600b1746970";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
 function showTemperature(response) {
-  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let result = document.querySelector(".degree");
   result.innerHTML = temperature;
